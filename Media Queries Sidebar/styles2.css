@@ -1,0 +1,50 @@
+/* styles2.css */
+
+/* Estilo para o corpo da página */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Estilos adicionais para links na Sidebar */
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Media Query para telas pequenas (até 600px) */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
